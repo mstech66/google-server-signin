@@ -1,0 +1,80 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.intro {
+    padding: 50px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.card_container {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.prof_card {
+    width: min-content;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    border-radius: 8px;
+    padding: 12px;
+    display: grid;
+    grid-template: repeat(2, 1fr)/auto auto;
+    transition: all 500ms;
+}
+
+.prof_card:hover {
+    cursor: pointer;
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 10, 20, 0.1) 0px 0.175em 0.5em;
+}
+
+.picture {
+    grid-row: 3/1;
+    grid-column: 2/1;
+    margin: 12px;
+}
+
+.details {
+    grid-row: 3/1;
+    grid-column: 3/2;
+    display: grid;
+    grid-template: repeat(2, auto)/auto;
+    gap: 12px;
+    margin: 12px;
+}
+
+.account_name {
+    grid-row: 2/1;
+    color: #424242;
+    align-self: end;
+}
+
+.actions {
+    grid-row: 3/2;
+    align-self: start;
+}
+
+.signout {
+    width: 100%;
+}
+
+#name {
+    font-size: 2vw;
+}
+
+#email {
+    font-size: 1.2vw;
+    color: #BDBDBD;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e2e2e2;
+}

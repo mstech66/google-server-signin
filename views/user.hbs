@@ -1,0 +1,22 @@
+<div class="card_container">
+    <div class="prof_card">
+        <div class="picture">
+            <img src="{{img_url}}" class="profile">
+        </div>
+        <div class="details">
+            <div class="account_name">
+                <span id="name">{{name}}</span>
+                <span id="email">{{email}}</span>
+            </div>
+            <div class="actions">
+                <button type="button" class="signout btn btn-outline-danger">Signout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.signout').click(function () {
+        window.location.href = 'http://localhost:3000/signout';
+    });
+</script>
